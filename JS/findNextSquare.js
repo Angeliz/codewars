@@ -14,15 +14,12 @@
 function findNextSquare(sq) {
   var perfectNumber = Math.sqrt(sq);
   var result=false;
-  function isInt(){
     if (perfectNumber%1==0){
        result= true;
     }
     else{
        result= false;
     }
-  }
-  isInt();
     if (result==true){
       return (perfectNumber+1)*(perfectNumber+1);
     }
