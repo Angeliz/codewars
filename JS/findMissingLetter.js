@@ -63,5 +63,3 @@ function findMissingLetter(array) {
     }
   }
 }
-
-
