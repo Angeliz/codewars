@@ -103,9 +103,10 @@ function LinkedStack(){
  }
  groupCheck("[({)]");
 //直接用正则表达式
- // function groupCheck(s){
- //   var r = /\{\}|\[\]|\(\)/;
- //   while(r.test(s))
- //     s = s.replace(r, '');
- //   return !s.length;
- // }
+ function groupCheck(s){
+   var r = /\{\}|\[\]|\(\)/;
+   while(r.test(s))
+     s = s.replace(r, '');
+   return !s.length;
+ }
+ 
