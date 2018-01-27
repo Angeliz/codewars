@@ -49,7 +49,8 @@ function dblLinear(n) {
       if(y>z){
         arr.push(z);
         zi++;
-      }else{
+      }
+      if(y<z){
         arr.push(y);
         yi++;
       }
