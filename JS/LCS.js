@@ -50,3 +50,17 @@ function LCS(x, y) {
    }
     return res.join('');
  }
+
+ function LCS(x, y) {
+  yChar=y.split("");
+  var start=0;
+  var arr=[];
+  for(var i=0;i<yChar.length;i++){
+    pos=x.indexOf(yChar[i],start);
+    if(pos>=start){
+      arr.push(yChar[i]);
+      start=pos+1;
+    }
+  }
+  return arr.join("");
+}
