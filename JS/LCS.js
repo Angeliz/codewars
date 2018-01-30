@@ -57,7 +57,7 @@ function LCS(x, y) {
   var arr=[];
   for(var i=0;i<yChar.length;i++){
     pos=x.indexOf(yChar[i],start);
-    if(pos>=start){
+    if(pos>=0){
       arr.push(yChar[i]);
       start=pos+1;
     }
